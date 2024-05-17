@@ -37,14 +37,19 @@ header{
 
     #main-nav{
         grid-area: main-nav;
-        display: none;
         @include md{
             display: block;
         }
+
         // see navigation scss file for styling 
     }
 
     #logo-container{
         display: none;
     }
+}
+
+.hideMainNavAtMobile{
+    display: none;
+    
 }

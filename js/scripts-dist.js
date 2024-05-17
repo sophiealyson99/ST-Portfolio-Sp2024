@@ -1,1 +1,1 @@
-var burgerBtn=document.querySelector("#burger-container button");burgerBtn.addEventListener("click",(()=>{console.log("burger clicked")}));
+var burgerBtn=document.querySelector("#burger-container button"),mainNavContainer=document.querySelector(),mainNavVisible=!1;burgerBtn.addEventListener("click",(()=>{if(console.log("burger clicked"),!1===e)var e=!0;else e=!1}));

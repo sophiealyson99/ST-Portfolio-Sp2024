@@ -460,7 +460,6 @@ header #main-nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main-nav;
-  display: none;
 }
 @media (min-width: 768px) {
   header #main-nav {
@@ -468,6 +467,10 @@ header #main-nav {
   }
 }
 header #logo-container {
+  display: none;
+}
+
+.hideMainNavAtMobile {
   display: none;
 }
 
