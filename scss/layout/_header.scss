@@ -1,3 +1,33 @@
 /* =============
     Header
 ============= */
+
+header{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+    "burger-container sitemap-container"
+    "main-nav main-nav";
+    padding: 24px 0;
+
+    #burger-container{
+        grid-area: burger-container;
+        padding-left: 16px;
+
+        button{
+            padding: 0;
+        }
+    }
+
+    #sitemap-container{
+        grid-area: sitemap-container;
+    }
+
+    #main-nav{
+        grid-area: main-nav;
+    }
+
+    #logo-container{
+        display: none;
+    }
+}

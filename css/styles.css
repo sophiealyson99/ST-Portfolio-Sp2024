@@ -335,12 +335,29 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.primary-sage-button {
+  background-color: var(--sage);
+}
+
 /* =============
     Forms
 ============= */
@@ -364,9 +381,47 @@ textarea {
 /* =============
     Navigation
 ============= */
+a:link, a:visited {
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 /* =============
     Header
 ============= */
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+      grid-template-areas: "burger-container sitemap-container" "main-nav main-nav";
+  padding: 24px 0;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: burger-container;
+  padding-left: 16px;
+}
+header #burger-container button {
+  padding: 0;
+}
+header #sitemap-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sitemap-container;
+}
+header #main-nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main-nav;
+}
+header #logo-container {
+  display: none;
+}
+
 /* =============
     Footer
 ============= */
