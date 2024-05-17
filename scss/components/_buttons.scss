@@ -9,4 +9,9 @@ button{
 
 .primary-sage-button{
     background-color: var(--sage);
+    padding: 8px 24px;
+    font-weight: 800;
+    font-size: rem-calc(18);
+    color: var(--black);
+    border-radius: 23px;
 }

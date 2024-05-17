@@ -9,22 +9,39 @@ header{
     "burger-container sitemap-container"
     "main-nav main-nav";
     padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 
     #burger-container{
         grid-area: burger-container;
         padding-left: 16px;
+        display: flex;
+        align-items: center;
 
         button{
             padding: 0;
+            color: var(--black);
         }
     }
 
     #sitemap-container{
         grid-area: sitemap-container;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 16px;
     }
 
     #main-nav{
         grid-area: main-nav;
+        display: none;
+        @include md{
+            display: block;
+        }
+        // see navigation scss file for styling 
     }
 
     #logo-container{
