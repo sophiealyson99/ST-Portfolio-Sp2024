@@ -3,6 +3,7 @@
     height: 50vh;
     background-size: cover;
     background-position: center;
+    // not sure i need margin top yet, will push the image down so its more centralized, depends on what i decide to use for hero image
     margin-top: 60px;
 
     @include md{
