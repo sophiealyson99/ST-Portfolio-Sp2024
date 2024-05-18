@@ -17,6 +17,8 @@ html {
   --forestGreen: #41582C;
   --pink: #A6568F;
   --charcoal: #433E42;
+  --brown: #613922;
+  --tan: #A57D59;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -358,20 +360,20 @@ button {
   background-color: transparent;
 }
 
-.primary-sage-button {
-  background-color: var(--sage);
+.primary-brown-button {
+  background-color: var(--brown);
   padding: 8px 24px;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.125rem;
-  color: var(--black);
+  color: var(--white);
   border-radius: 23px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
   cursor: pointer;
 }
-.primary-sage-button:hover {
+.primary-brown-button:hover {
   background-color: var(--black);
-  color: var(--white);
+  color: var(--tan);
 }
 
 /* =============
@@ -404,14 +406,14 @@ a:link, a:visited {
 }
 
 #main-nav {
-  background-color: var(--sage);
+  background-color: var(--brown);
+  color: var(--white);
   padding: 24px 16px;
-  margin-top: 16px;
 }
 @media (min-width: 768px) {
   #main-nav {
     background-color: var(--white);
-    margin-top: 0;
+    padding-bottom: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -433,17 +435,18 @@ a:link, a:visited {
   font-size: 1.5rem;
   padding: 16px 0;
   display: inline-block;
-  color: var(--black);
+  color: var(--white);
 }
 @media (min-width: 768px) {
   #main-nav ul li a:link, #main-nav ul li a:visited {
     padding: 0 8px;
     font-weight: 600;
     font-size: 1.125rem;
+    color: var(--brown);
   }
 }
 #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
-  color: var(--sage);
+  color: var(--tan);
 }
 #main-nav ul li #last-link {
   border: none;
@@ -458,12 +461,13 @@ header {
   -ms-grid-columns: 20% auto;
   grid-template-columns: 20% auto;
       grid-template-areas: "burger-container sitemap-container" "main-nav main-nav";
-  padding: 24px 0;
+  padding: 14px 0 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  background-color: var(--white);
 }
 @media (min-width: 768px) {
   header {
@@ -508,6 +512,7 @@ header #sitemap-container {
           align-items: center;
   padding-right: 16px;
   padding-top: 0;
+  padding-bottom: 8px;
 }
 header #main-nav {
   -ms-grid-row: 2;
@@ -557,3 +562,25 @@ header #logo-container {
 /* =============
     Footer
 ============= */
+#hero {
+  background-image: url("../img/booktop-hero.png");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 60vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 70vh;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 100vh;
+  }
+}

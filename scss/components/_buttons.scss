@@ -7,18 +7,18 @@ button{
     background-color: transparent;
 }
 
-.primary-sage-button{
-    background-color: var(--sage);
+.primary-brown-button{
+    background-color: var(--brown);
     padding: 8px 24px;
-    font-weight: 800;
+    font-weight: 700;
     font-size: rem-calc(18);
-    color: var(--black);
+    color: var(--white);
     border-radius: 23px;
     transition: 0.25s;
     cursor: pointer;
 
     &:hover{
         background-color: var(--black);
-        color: var(--white);
+        color: var(--tan);
     }
 }

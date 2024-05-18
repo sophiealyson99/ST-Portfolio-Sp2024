@@ -8,12 +8,13 @@ header{
     grid-template-areas: 
     "burger-container sitemap-container"
     "main-nav main-nav";
-    padding: 24px 0;
+    padding: 14px 0 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
+    background-color: var(--white);
 
     @include md{
         grid-template-columns: 60% auto;
@@ -45,6 +46,7 @@ header{
         align-items: center;
         padding-right: 16px;
         padding-top: 0;
+        padding-bottom: 8px;
     }
 
     #main-nav{

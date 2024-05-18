@@ -8,13 +8,13 @@ a:link, a:visited{
 }
 
 #main-nav{
-    background-color: var(--sage);
+    background-color: var(--brown);
+    color: var(--white);
     padding: 24px 16px;
-    margin-top: 16px;
 
     @include md{
         background-color: var(--white);
-        margin-top: 0;
+        padding-bottom: 16px;
     }
 
     ul{
@@ -34,16 +34,17 @@ a:link, a:visited{
                 font-size: rem-calc(24);
                 padding: 16px 0;
                 display: inline-block;
-                color: var(--black);
+                color: var(--white);
 
                 @include md{
                     padding: 0 8px;
                     font-weight: 600;
                     font-size: rem-calc(18);
+                    color: var(--brown);
                 }
 
                 &:hover, &:active{
-                    color: var(--sage);
+                    color: var(--tan);
                 }
 
             }
