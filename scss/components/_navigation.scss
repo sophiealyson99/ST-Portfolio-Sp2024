@@ -12,14 +12,36 @@ a:link, a:visited{
     padding: 24px 16px;
     margin-top: 16px;
 
+    @include md{
+        background-color: var(--white);
+        margin-top: 0;
+    }
+
     ul{
+        @include md{
+            display: flex;
+            align-items: center;
+        }
+
         li{
-            a:link, a:visted{
+            // border: 1px solid red;
+            a:link, a:visited{
                 font-size: rem-calc(24);
                 padding: 16px 0;
                 display: inline-block;
                 color: var(--black);
+
+                @include md{
+                    font-size: rem-calc(18);
+                }
+                &:hover, &:active{
+                    color: var(--sage);
+                }
             }
+        }
+
+        #last-link{
+            border: none;
         }
     }
 }

@@ -1,6 +1,6 @@
 var burgerBtn = document.querySelector("#burger-container button");
 
-var mainNavContainer = document.querySelector()
+var mainNavContainer = document.querySelector("#main-nav");
 
 var mainNavVisible = false; 
 
@@ -10,9 +10,16 @@ burgerBtn.addEventListener("click", () =>{
     // check to see if we can see the main nav
 
     if(mainNavVisible === false){
-        var mainNavVisible = true;
+        mainNavContainer.classList.remove("hideMainNavAtMobile");
+        mainNavVisible = true;
     }else{
-        mainNavVisible = false
+        mainNavContainer.classList.add("hideMainNavAtMobile");
+        mainNavVisible = false;
     }
 
+});
+
+mainNavContainer.addEventListener("click", () =>{
+    mainNavContainer.classList.add("hideMainNavAtMobile");
+    mainNavVisible = false;
 });
