@@ -365,6 +365,13 @@ button {
   font-size: 1.125rem;
   color: var(--black);
   border-radius: 23px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.primary-sage-button:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* =============
@@ -417,6 +424,11 @@ a:link, a:visited {
             align-items: center;
   }
 }
+@media (min-width: 768px) {
+  #main-nav ul li {
+    border-right: 2px solid black;
+  }
+}
 #main-nav ul li a:link, #main-nav ul li a:visited {
   font-size: 1.5rem;
   padding: 16px 0;
@@ -425,13 +437,15 @@ a:link, a:visited {
 }
 @media (min-width: 768px) {
   #main-nav ul li a:link, #main-nav ul li a:visited {
+    padding: 0 8px;
+    font-weight: 600;
     font-size: 1.125rem;
   }
 }
 #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
   color: var(--sage);
 }
-#main-nav ul #last-link {
+#main-nav ul li #last-link {
   border: none;
 }
 
@@ -505,6 +519,9 @@ header #main-nav {
   header #main-nav {
     display: block;
   }
+}
+header #main-nav #last-link {
+  border: none;
 }
 header #logo-container {
   display: none;

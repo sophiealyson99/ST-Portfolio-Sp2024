@@ -14,4 +14,11 @@ button{
     font-size: rem-calc(18);
     color: var(--black);
     border-radius: 23px;
+    transition: 0.25s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--black);
+        color: var(--white);
+    }
 }

@@ -25,6 +25,11 @@ a:link, a:visited{
 
         li{
             // border: 1px solid red;
+
+            @include md{
+                border-right: 2px solid black;
+            }
+
             a:link, a:visited{
                 font-size: rem-calc(24);
                 padding: 16px 0;
@@ -32,16 +37,20 @@ a:link, a:visited{
                 color: var(--black);
 
                 @include md{
+                    padding: 0 8px;
+                    font-weight: 600;
                     font-size: rem-calc(18);
                 }
+
                 &:hover, &:active{
                     color: var(--sage);
                 }
+
+            }
+            #last-link{
+                border: none;
             }
         }
-
-        #last-link{
-            border: none;
-        }
+    
     }
 }
