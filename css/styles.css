@@ -380,6 +380,12 @@ button {
   cursor: pointer;
 }
 
+.burger-button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -618,6 +624,23 @@ header #logo-container {
 
 #association-top {
   padding-top: 260px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#school-projects {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  #school-projects {
+    padding-top: 260px;
+  }
+}
+
+#work-projects {
   padding-left: 24px;
   padding-right: 24px;
 }
