@@ -8,7 +8,7 @@ a:link, a:visited{
 }
 
 #main-nav{
-    background-color: var(--brown);
+    background-color: var(--forestGreen);
     color: var(--white);
     padding: 24px 16px;
 
@@ -40,7 +40,7 @@ a:link, a:visited{
                     padding: 0 8px;
                     font-weight: 600;
                     font-size: rem-calc(18);
-                    color: var(--brown);
+                    color: var(--forestGreen);
                 }
 
                 &:hover, &:active{

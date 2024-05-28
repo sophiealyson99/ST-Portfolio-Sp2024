@@ -1,4 +1,4 @@
-var burgerBtn = document.querySelector("#burger-container button");
+var burgerBtn = document.querySelector(".burger-button");
 
 var mainNavContainer = document.querySelector("#main-nav");
 
@@ -19,7 +19,3 @@ burgerBtn.addEventListener("click", () =>{
 
 });
 
-mainNavContainer.addEventListener("click", () =>{
-    mainNavContainer.classList.add("hideMainNavAtMobile");
-    mainNavVisible = false;
-});

@@ -8,11 +8,12 @@ button{
 }
 
 .primary-brown-button{
-    background-color: var(--brown);
+    background-color: transparent;
+    border-color: var(--forestGreen);
     padding: 8px 24px;
     font-weight: 700;
     font-size: rem-calc(18);
-    color: var(--white);
+    color: var(--forestGreen);
     border-radius: 23px;
     transition: 0.25s;
     cursor: pointer;
@@ -30,4 +31,16 @@ button{
 .burger-button{
     transition: 0.25s;
     cursor: pointer;
+}
+
+#send-button{
+    transition: 0.25s;
+    cursor: pointer;
+    background-color: var(--forestGreen);
+    color: var(--white);
+
+    &:hover{
+        background-color: var(--black);
+        color: var(--tan);
+    }
 }

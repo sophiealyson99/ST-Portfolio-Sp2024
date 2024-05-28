@@ -361,11 +361,12 @@ button {
 }
 
 .primary-brown-button {
-  background-color: var(--brown);
+  background-color: transparent;
+  border-color: var(--forestGreen);
   padding: 8px 24px;
   font-weight: 700;
   font-size: 1.125rem;
-  color: var(--white);
+  color: var(--forestGreen);
   border-radius: 23px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -384,6 +385,18 @@ button {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   cursor: pointer;
+}
+
+#send-button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+  background-color: var(--forestGreen);
+  color: var(--white);
+}
+#send-button:hover {
+  background-color: var(--black);
+  color: var(--tan);
 }
 
 /* =============
@@ -416,7 +429,7 @@ a:link, a:visited {
 }
 
 #main-nav {
-  background-color: var(--brown);
+  background-color: var(--forestGreen);
   color: var(--white);
   padding: 24px 16px;
 }
@@ -452,7 +465,7 @@ a:link, a:visited {
     padding: 0 8px;
     font-weight: 600;
     font-size: 1.125rem;
-    color: var(--brown);
+    color: var(--forestGreen);
   }
 }
 #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
@@ -596,19 +609,34 @@ header #logo-container {
 }
 
 #home {
-  padding: 60px 16px;
-}
-#home {
   padding: 50px 100px 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 768px) {
+  #home {
+    padding-top: 260px;
+  }
 }
 
 #about-top {
-  padding-top: 200px;
+  padding-top: 40px;
   padding-left: 24px;
   padding-right: 24px;
+}
+@media (min-width: 768px) {
+  #about-top {
+    padding-top: 260px;
+  }
+}
+#about-top #about-image {
+  display: -ms-grid;
+  display: grid;
+  grid-area: "about-image";
 }
 
 #about-middle {
@@ -616,16 +644,49 @@ header #logo-container {
   padding-right: 24px;
 }
 
-#resume-text {
-  padding-top: 280px;
+#spotify {
   padding-left: 24px;
   padding-right: 24px;
 }
 
-#association-top {
-  padding-top: 260px;
+#playlist {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 40% auto;
+  grid-template-columns: auto 40% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#goodreads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+#resume-text {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 768px) {
+  #resume-text {
+    padding-top: 260px;
+  }
+}
+
+#association-top {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 768px) {
+  #association-top {
+    padding-top: 260px;
+  }
 }
 
 #school-projects {
@@ -643,4 +704,146 @@ header #logo-container {
 #work-projects {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+#contact {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #contact {
+    padding-top: 260px;
+  }
+}
+
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--forestGreen);
+  gap: 14px;
+  padding: 32px 16px;
+}
+#contact-form form {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+@media (min-width: 768px) {
+  #contact-form form {
+    padding: 0 10vw;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+    -ms-grid-rows: 8vh 16vh auto;
+    grid-template-rows: 8vh 16vh auto;
+        grid-template-areas: "contact-name contact-email" "contact-message contact-message" ". send-button";
+  }
+}
+#contact-form form div {
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+#contact-form form div input {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#contact-form form div textarea {
+  padding-top: 8px;
+  padding-left: 8px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#contact-form form div ::-webkit-input-placeholder {
+  color: var(--forestGreen);
+  opacity: 1;
+}
+#contact-form form div ::-moz-placeholder {
+  color: var(--forestGreen);
+  opacity: 1;
+}
+#contact-form form div :-ms-input-placeholder {
+  color: var(--forestGreen);
+  opacity: 1;
+}
+#contact-form form div ::-ms-input-placeholder {
+  color: var(--forestGreen);
+  opacity: 1;
+}
+#contact-form form div ::placeholder {
+  color: var(--forestGreen);
+  opacity: 1;
+}
+#contact-form form div ::ms-input-placeholder {
+  color: var(--forestGreen);
+}
+@media (min-width: 768px) {
+  #contact-form form #contact-name {
+    grid-area: contact-name;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form form #contact-email {
+    grid-area: contact-email;
+  }
+}
+#contact-form form #contact-message {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (min-width: 768px) {
+  #contact-form form #contact-message {
+    grid-area: contact-message;
+  }
+}
+#contact-form form #send-button {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.25rem;
+}
+@media (min-width: 768px) {
+  #contact-form form #send-button {
+    grid-area: send-button;
+  }
+}
+@media (min-width: 768px) {
+  #contact-form form #contact-name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #contact-form form #contact-email {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #contact-form form #contact-message {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #contact-form form #send-button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
 }

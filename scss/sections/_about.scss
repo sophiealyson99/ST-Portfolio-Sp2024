@@ -1,10 +1,36 @@
 #about-top{
-    padding-top: 200px;
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    @include md{
+        padding-top: 260px;
+    }
+
+    #about-image{
+        display: grid;
+        grid-area: "about-image";
+        
+    }
+}
+
+#about-middle{
     padding-left: 24px;
     padding-right: 24px;
 }
 
-#about-middle{
+#spotify{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#playlist{
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    align-items: center;
+}
+
+#goodreads{
+    display: flex;
     padding-left: 24px;
     padding-right: 24px;
 }
