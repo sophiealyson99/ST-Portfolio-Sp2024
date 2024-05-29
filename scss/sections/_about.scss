@@ -1,47 +1,59 @@
 
 
-#about-top{
-    padding-top: 40px;
-    padding-left: 24px;
-    padding-right: 24px;
-    @include md{
-        padding-top: 260px;
-    }
-
-    #about-image{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
-        border-radius: 6px;
-        max-width: 100%; 
-        height: auto;
-
-        // @include md{
-        //     width: 25%;
-        // }
-        
-    }
-}
-#about-middle{
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
 // #about-me{
 //     display: grid;
-//     grid-template-columns: 20% auto;
+//     grid-template-columns: repeat(1, 2fr);
+//     grid-template-columns: 35% auto;
 //     grid-template-areas: 
-//     "about-top about-middle";
+//     "about-image about-text";
 // }
 
-// #about-image{
-//     float: left;
-//     width: 100%;
-//   height: auto;
-//   border-radius: 50%;
-// }
 
+#about-me{
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    gap: 16px;
+
+    @include md{
+        padding-top: 240px;
+    }
+}
+
+#about-image{
+    float: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#about-text{
+    float: right;
+    @include md{
+        padding-top: 34px;
+    }
+}
+
+.image-gallery{
+    padding-left: 24px;
+    padding-top: 6px;
+    padding-right: 24px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25vh 25vh 50vh 50vh 30vh;
+
+    grid-template-areas: 
+    "p1 p2 p3 p4"
+    "p5 p6 p7";
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 #spotify{
