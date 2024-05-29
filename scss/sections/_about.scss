@@ -1,59 +1,108 @@
 
 
-// #about-me{
-//     display: grid;
-//     grid-template-columns: repeat(1, 2fr);
-//     grid-template-columns: 35% auto;
-//     grid-template-areas: 
-//     "about-image about-text";
-// }
-
-
-#about-me{
-    padding-left: 24px;
-    padding-right: 24px;
-    display: flex;
-    gap: 16px;
-
-    @include md{
-        padding-top: 240px;
-    }
-}
-
-#about-image{
-    float: left;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#about-text{
-    float: right;
-    @include md{
-        padding-top: 34px;
-    }
-}
-
-.image-gallery{
-    padding-left: 24px;
-    padding-top: 6px;
-    padding-right: 24px;
+#about-me-container{
+    padding: 24px 16px;
     display: grid;
     gap: 16px;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+
+    grid-template-areas: "about-image about-text";
+
+    @include md{
+        padding-top: 280px;
+    }
+
+    #about-image{
+        grid-area: about-image;
+        background-image: url(../img/gallery/selfie.jpg);
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    #about-text{
+        padding: 24px
+    }
+}
+
+
+
+
+#image-gallery{
+    padding: 14px 16px;
+    display: grid;
+    gap: 16px;
+
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 25vh 25vh 50vh 50vh 30vh;
+    grid-template-rows: 15vh;
 
     grid-template-areas: 
-    "p1 p2 p3 p4"
-    "p5 p6 p7";
+    "p1 p2"
+    "p3 p4"
+    "p5 p6"
+    "p7 g8";
+
+    @include md{
+        grid-template-columns: repeat(4, fr);
+        grid-template-rows: 50vh 50vh;
+
+        grid-template-areas: 
+        "p1 p2 p3 p4"
+        "p5 p6 p7 p8";
+    }
+
+
+    li{
+        background-size: cover;
+        background-position: center;
+    }
+
+    #p1{
+        grid-area: p1;
+        background-image: url("../img/gallery/grad.JPG");
+    }
+
+    #p2{
+        grid-area: p2;
+        background-image: url("../img/gallery/sisters.jpg");
+    }
+
+    #p3{
+        grid-area: p3;
+        background-image: url("../img/gallery/millie.JPEG");
+    }
+
+    #p4{
+        grid-area: p4;
+        background-image: url("../img/gallery/xmas.jpg"); 
+    }
+
+    #p5{
+        grid-area: p5;
+        background-image: url("../img/gallery/river.jpg"); 
+    }
+
+    #p6{
+        grid-area: p6;
+        background-image: url("../img/gallery/sake.jpg"); 
+    }
+
+    #p7{
+        grid-area: p7;
+        background-image: url("../img/gallery/lobster.jpg"); 
+    }
+
+    #p8{
+        grid-area: p8;
+        background-image: url("../img/IMG_2283.jpg"); 
+    }
 }
 
-.gallery__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 
 #spotify{
