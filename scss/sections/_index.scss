@@ -17,12 +17,12 @@
 #home{
 
     @include md{
-        padding-top: 260px;
+        padding-top: 26px;
     }
 
     #quote{
+        text-align: center;
         @include md{
-            padding-top: 60px;
             padding-left: 300px;
             padding-right: 300px;
         }
