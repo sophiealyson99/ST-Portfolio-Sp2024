@@ -44,7 +44,7 @@ a:link, a:visited{
                 }
 
                 &:hover, &:active{
-                    color: var(--tan);
+                    color: var(--black);
                 }
 
             }
@@ -54,4 +54,8 @@ a:link, a:visited{
         }
     
     }
+}
+
+#last-link{
+    justify-content: flex-end;
 }

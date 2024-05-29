@@ -6,7 +6,7 @@ header{
     display: grid;
     grid-template-columns: 20% auto;
     grid-template-areas: 
-    "burger-container sitemap-container"
+    "burger-container contact-button-container"
     "main-nav main-nav";
     padding: 14px 0 0;
     position: fixed;
@@ -17,10 +17,11 @@ header{
     background-color: var(--white);
 
     @include md{
-        grid-template-columns: 60% auto;
+        grid-template-columns: 80% auto;
         grid-template-areas: 
         "logo-container logo-container"
-        "main-nav sitemap-container";
+        "main-nav contact-button-container";
+        // justify-content: space-evenly;
     }
 
     #burger-container{
@@ -39,8 +40,8 @@ header{
         }
     }
 
-    #sitemap-container{
-        grid-area: sitemap-container;
+    #contact-button-container{
+        grid-area: contact-button-container;
         display: flex;
         justify-content: flex-end;
         align-items: center;

@@ -1,3 +1,5 @@
+
+
 #about-top{
     padding-top: 40px;
     padding-left: 24px;
@@ -7,16 +9,40 @@
     }
 
     #about-image{
-        display: grid;
-        grid-area: "about-image";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        border-radius: 6px;
+        max-width: 100%; 
+        height: auto;
+
+        // @include md{
+        //     width: 25%;
+        // }
         
     }
 }
-
 #about-middle{
     padding-left: 24px;
     padding-right: 24px;
 }
+
+// #about-me{
+//     display: grid;
+//     grid-template-columns: 20% auto;
+//     grid-template-areas: 
+//     "about-top about-middle";
+// }
+
+// #about-image{
+//     float: left;
+//     width: 100%;
+//   height: auto;
+//   border-radius: 50%;
+// }
+
+
 
 #spotify{
     padding-left: 24px;

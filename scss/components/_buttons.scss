@@ -7,7 +7,8 @@ button{
     background-color: transparent;
 }
 
-.primary-brown-button{
+// was .primary-brown-button
+.primary-contact-button{
     background-color: transparent;
     border-color: var(--forestGreen);
     padding: 8px 24px;
@@ -19,8 +20,8 @@ button{
     cursor: pointer;
 
     &:hover{
-        background-color: var(--black);
-        color: var(--tan);
+        background-color: var(--forestGreen);
+        color: var(--white);
     }
 }
 
