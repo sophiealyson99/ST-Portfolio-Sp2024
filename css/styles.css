@@ -407,6 +407,19 @@ button {
   color: var(--tan);
 }
 
+#sitemap-btn {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+  border-radius: 6%;
+  color: var(--forestGreen);
+  border: 1px solid var(--forestGreen);
+}
+#sitemap-btn:hover {
+  background-color: var(--forestGreen);
+  color: var(--white);
+}
+
 /* =============
     Forms
 ============= */
@@ -602,17 +615,41 @@ header #logo-container {
 .footer-container {
   display: -ms-grid;
   display: grid;
+  padding: 22px;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+      grid-template-areas: "valid-icons footer-cci footer-sitemap";
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 24px;
+  padding-right: 24px;
 }
-
-#footer-cci {
-  display: table;
+.footer-container #valid-icons {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: valid-icons;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+.footer-container #footer-cci {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-cci;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 22px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+.footer-container #footer-sitemap {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: footer-sitemap;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
 }
 
 #hero-image {
@@ -738,8 +775,8 @@ header #logo-container {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-  -ms-grid-columns: fr 16px fr 16px fr 16px fr;
-  grid-template-columns: repeat(4, fr);
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 20vh 16px 20vh;
   grid-template-rows: 20vh 20vh;
       grid-template-areas: "p1 p2 p3 p4" "p5 p6 p7 p8";
@@ -854,7 +891,6 @@ header #logo-container {
   padding-right: 24px;
   border-radius: 10px;
   margin: 0 auto;
-  border: 1 px solid red;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

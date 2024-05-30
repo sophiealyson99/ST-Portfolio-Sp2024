@@ -4,13 +4,34 @@
 
 .footer-container{
     display: grid;
+    padding: 22px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "valid-icons footer-cci footer-sitemap";
+
+    justify-content: space-around;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    #valid-icons{
+        grid-area: valid-icons;
+        grid-column-start: 1;
+    }
+
+    #footer-cci{
+        grid-area: footer-cci;
+        // display: table;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        grid-column-start: 2;
+    }
+
+    #footer-sitemap{
+        grid-area: footer-sitemap;
+        grid-column-start: 3;
+    }
 }
 
-#footer-cci{
-    display: table;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 22px;
-    justify-content: center;
-}

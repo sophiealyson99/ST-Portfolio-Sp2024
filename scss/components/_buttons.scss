@@ -45,3 +45,18 @@ button{
         color: var(--tan);
     }
 }
+
+#sitemap-btn{
+    transition: 0.25s;
+    cursor: pointer;
+    // background-color: var(--forestGreen);
+    // color: var(--white);
+    border-radius: 6%;
+    color: var(--forestGreen);
+    border: 1px solid var(--forestGreen);
+
+    &:hover{
+        background-color: var(--forestGreen);
+        color: var(--white);
+    }
+}
