@@ -9,18 +9,19 @@ header{
     "burger-container contact-button-container"
     "main-nav main-nav";
     padding: 14px 0 0;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    // left: 0;
+    // right: 0;
     width: 100%;
     background-color: var(--white);
+    margin: auto;
+
 
     @include md{
-        grid-template-columns: 80% auto;
+        grid-template-columns: 40% 20% 40%;
         grid-template-areas: 
-        "logo-container logo-container"
-        "main-nav contact-button-container";
+        "main-nav my-logo contact-button-container"
         // justify-content: space-evenly;
     }
 
@@ -46,7 +47,7 @@ header{
         justify-content: flex-end;
         align-items: center;
         padding-right: 16px;
-        padding-top: 0;
+        padding-top: 30px;
         padding-bottom: 8px;
     }
 
@@ -54,6 +55,7 @@ header{
         grid-area: main-nav;
         @include md{
             display: block;
+            padding-top: 80px;
         }
 
         #last-link{
@@ -68,7 +70,14 @@ header{
 
         @include md{
             display: block;
-            grid-area: logo-container;
+            grid-area: my-logo;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+
+        #my-logo{
+            height: 4vh;
+            position: absolute;
             text-align: center;
         }
     }

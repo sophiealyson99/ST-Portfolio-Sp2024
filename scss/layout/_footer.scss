@@ -3,6 +3,12 @@
 ============= */
 
 .footer-container{
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    width: 92%;
+    text-align: center;
     display: grid;
     padding: 22px;
     grid-template-columns: auto auto auto;
@@ -13,6 +19,15 @@
 
     padding-left: 24px;
     padding-right: 24px;
+
+    @include md{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        // padding-top: 64px;
+    }
 
     #valid-icons{
         grid-area: valid-icons;

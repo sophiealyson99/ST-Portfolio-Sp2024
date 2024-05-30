@@ -27,6 +27,7 @@
     #quote{
         text-align: center;
         color: var(--forestGreen);
+        margin: 34px;
         @include md{
             padding-left: 300px;
             padding-right: 300px;

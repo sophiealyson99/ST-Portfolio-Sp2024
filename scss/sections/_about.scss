@@ -85,6 +85,9 @@
     //     "p5 p6 p7 p8";
     // }
 
+    @include md{
+        margin-bottom: 44px;
+    }
 
     li{
         background-size: cover;
