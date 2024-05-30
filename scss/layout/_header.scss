@@ -35,7 +35,7 @@ header{
             display: none;
         }
 
-        button{
+        .burger-button{
             padding: 0;
             color: var(--black);
         }
@@ -43,12 +43,15 @@ header{
 
     #contact-button-container{
         grid-area: contact-button-container;
-        display: flex;
-        justify-content: flex-end;
+        // display: flex;
+        // justify-content: flex-end;
         align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
         padding-right: 16px;
-        padding-top: 30px;
-        // padding-bottom: 8px;
+        padding-top: 10px;
+        padding-bottom: 8px;
     }
 
     #main-nav{

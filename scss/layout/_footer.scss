@@ -3,7 +3,7 @@
 ============= */
 
 .footer-container{
-    position: absolute;
+    position: fixed;
     background-color: white;
     left: 0;
     bottom: 0;
@@ -19,7 +19,7 @@
 
     padding-left: 24px;
     padding-right: 24px;
-
+    
     @include md{
         position: fixed;
         left: 0;

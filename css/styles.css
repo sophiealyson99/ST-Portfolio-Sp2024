@@ -353,6 +353,12 @@ ul li {
   height: 14vh;
 }
 
+.burger-button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
 /* =============
     Typography
 ============= */
@@ -543,7 +549,7 @@ header #burger-container {
     display: none;
   }
 }
-header #burger-container button {
+header #burger-container .burger-button {
   padding: 0;
   color: var(--black);
 }
@@ -551,17 +557,15 @@ header #contact-button-container {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: contact-button-container;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
   padding-right: 16px;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 header #main-nav {
   -ms-grid-row: 2;
@@ -620,7 +624,7 @@ header #logo-container #my-logo {
     Footer
 ============= */
 .footer-container {
-  position: absolute;
+  position: fixed;
   background-color: white;
   left: 0;
   bottom: 0;
@@ -765,6 +769,7 @@ header #logo-container #my-logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   #about-me-container #about-image {
@@ -798,6 +803,7 @@ header #logo-container #my-logo {
   display: -ms-grid;
   display: grid;
   gap: 16px;
+  padding-bottom: 80px;
   -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
   grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 20vh 16px 20vh;
