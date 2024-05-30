@@ -349,6 +349,10 @@ ul li {
   list-style: none;
 }
 
+#logo-container {
+  height: 14vh;
+}
+
 /* =============
     Typography
 ============= */
@@ -601,13 +605,12 @@ header #logo-container {
   margin-left: auto;
   margin-right: auto;
   padding: 22px;
-  position: relative;
 }
 
 #hero-image {
   background-image: url("../img/newer-hero.jpeg");
   height: 26vh;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   margin-top: 60px;
 }
@@ -615,17 +618,27 @@ header #logo-container {
   #hero-image {
     height: 26vh;
     padding-top: 280px;
+    background-size: contain;
+    background-position: center;
   }
 }
 @media (min-width: 1024px) {
   #hero-image {
     height: 26vh;
+    background-size: contain;
+    background-position: center;
   }
 }
 @media (min-width: 1200px) {
   #hero-image {
     height: 26vh;
+    background-size: contain;
+    background-position: center;
   }
+}
+
+#logo-container {
+  height: 14vh;
 }
 
 @media (min-width: 768px) {
@@ -635,6 +648,7 @@ header #logo-container {
 }
 #home #quote {
   text-align: center;
+  color: var(--forestGreen);
 }
 @media (min-width: 768px) {
   #home #quote {
@@ -645,35 +659,70 @@ header #logo-container {
 
 #about-me-container {
   padding: 24px 16px;
+  padding-top: 62px;
   display: -ms-grid;
   display: grid;
   gap: 16px;
-  -ms-grid-columns: 30% 16px auto;
-  grid-template-columns: 30% auto;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-      grid-template-areas: "about-image about-text";
+      grid-template-areas: "about-image about-image" "about-text about-text";
 }
 @media (min-width: 768px) {
   #about-me-container {
     padding-top: 280px;
+        grid-template-areas: "about-image about-text";
+    -ms-grid-columns: 30% auto;
+    grid-template-columns: 30% auto;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
 }
 #about-me-container #about-image {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: about-image;
   background-image: url(../img/gallery/selfie.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 50%;
+  height: 40vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  #about-me-container #about-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+}
+@media (min-width: 768px) {
+  #about-me-container #about-image {
+    background-size: contain;
+    background-position: center;
+  }
 }
 #about-me-container #about-text {
   padding: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#playlist {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% auto 5%;
+  grid-template-columns: 5% auto 5%;
+      grid-template-areas: ". playlist .";
 }
 
 #image-gallery {
@@ -681,20 +730,11 @@ header #logo-container {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 15vh;
-  grid-template-rows: 15vh;
-      grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 g8";
-}
-@media (min-width: 768px) {
-  #image-gallery {
-    -ms-grid-columns: (fr)[4];
-    grid-template-columns: repeat(4, fr);
-    -ms-grid-rows: 50vh 50vh;
-    grid-template-rows: 50vh 50vh;
-        grid-template-areas: "p1 p2 p3 p4" "p5 p6 p7 p8";
-  }
+  -ms-grid-columns: fr 16px fr 16px fr 16px fr;
+  grid-template-columns: repeat(4, fr);
+  -ms-grid-rows: 20vh 16px 20vh;
+  grid-template-rows: 20vh 20vh;
+      grid-template-areas: "p1 p2 p3 p4" "p5 p6 p7 p8";
 }
 #image-gallery li {
   background-size: cover;
@@ -713,95 +753,40 @@ header #logo-container {
   background-image: url("../img/gallery/sisters.jpg");
 }
 #image-gallery #p3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: p3;
   background-image: url("../img/gallery/millie.JPEG");
 }
 #image-gallery #p4 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
   grid-area: p4;
   background-image: url("../img/gallery/xmas.jpg");
 }
 #image-gallery #p5 {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: p5;
   background-image: url("../img/gallery/river.jpg");
 }
 #image-gallery #p6 {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: p6;
   background-image: url("../img/gallery/sake.jpg");
 }
 #image-gallery #p7 {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: p7;
   background-image: url("../img/gallery/lobster.jpg");
 }
 #image-gallery #p8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
   grid-area: p8;
   background-image: url("../img/IMG_2283.jpg");
-}
-@media (min-width: 768px) {
-  #image-gallery #p1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  #image-gallery #p2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  #image-gallery #p3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-  #image-gallery #p4 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-  }
-  #image-gallery #p5 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  #image-gallery #p6 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  #image-gallery #p7 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-  }
-  #image-gallery #p8 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-  }
-}
-
-#spotify {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-#playlist {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 40% auto;
-  grid-template-columns: auto 40% auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#goodreads {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 #resume-text {
@@ -854,31 +839,35 @@ header #logo-container {
   padding-right: 24px;
   border-radius: 10px;
   margin: 0 auto;
-  border: none;
+  border: 1 px solid red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #contact {
-    padding-top: 260px;
+    padding-top: 340px;
   }
 }
 
 #contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 24px;
   padding: 12px 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #contact-form form {
   display: -ms-grid;
   display: grid;
   gap: 16px;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
 }
 @media (min-width: 768px) {
   #contact-form form {
-    padding: 0 10vw;
     -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
     -ms-grid-rows: 8vh 16vh auto;
@@ -901,6 +890,7 @@ header #logo-container {
   padding-left: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
 }
 #contact-form form div textarea {
   padding-top: 8px;
@@ -909,6 +899,7 @@ header #logo-container {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
 }
 #contact-form form div ::-webkit-input-placeholder {
   color: var(--forestGreen);
@@ -934,13 +925,18 @@ header #logo-container {
   color: var(--forestGreen);
 }
 #contact-form form #contact-name {
-  border: none;
   width: 100%;
+  grid-area: contact-name;
 }
 @media (min-width: 768px) {
   #contact-form form #contact-name {
     grid-area: contact-name;
   }
+}
+#contact-form form #contact-email {
+  border: none;
+  width: 100%;
+  grid-area: contact-email;
 }
 @media (min-width: 768px) {
   #contact-form form #contact-email {
@@ -948,9 +944,12 @@ header #logo-container {
   }
 }
 #contact-form form #contact-message {
+  border: none;
+  width: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  grid-area: contact-message;
 }
 @media (min-width: 768px) {
   #contact-form form #contact-message {
@@ -968,6 +967,7 @@ header #logo-container {
   border: none;
   border-radius: 6px;
   font-size: 0.25rem;
+  grid-area: send-button;
 }
 @media (min-width: 768px) {
   #contact-form form #send-button {
@@ -979,9 +979,22 @@ header #logo-container {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
+  #contact-form form #contact-name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
   #contact-form form #contact-email {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
+  }
+  #contact-form form #contact-email {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #contact-form form #contact-message {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
   #contact-form form #contact-message {
     -ms-grid-row: 2;
@@ -992,4 +1005,12 @@ header #logo-container {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
   }
+  #contact-form form #send-button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+}
+
+#social-media {
+  display: table;
 }

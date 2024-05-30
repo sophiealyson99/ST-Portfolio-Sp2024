@@ -1,7 +1,7 @@
 #hero-image{
     background-image: url("../img/newer-hero.jpeg");
     height: 26vh;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     // not sure i need margin top yet, will push the image down so its more centralized, depends on what i decide to use for hero image
     margin-top: 60px;
@@ -9,13 +9,19 @@
     @include md{
         height: 26vh;
         padding-top: 280px;
+        background-size: contain;
+        background-position: center;
     }
 
     @include lg{
         height: 26vh;
+        background-size: contain;
+        background-position: center;
     }
 
     @include xl{
         height: 26vh;
+        background-size: contain;
+        background-position: center;
     }
 }

@@ -13,6 +13,10 @@
 //     }
 // }
 
+#logo-container{
+    height: 14vh;
+}
+
 
 #home{
 
@@ -22,6 +26,7 @@
 
     #quote{
         text-align: center;
+        color: var(--forestGreen);
         @include md{
             padding-left: 300px;
             padding-right: 300px;
