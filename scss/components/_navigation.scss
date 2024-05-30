@@ -10,7 +10,7 @@ a:link, a:visited{
 #main-nav{
     background-color: var(--forestGreen);
     color: var(--white);
-    padding: 24px 16px;
+    padding: 24px 16px 14px;
 
     @include md{
         background-color: var(--white);
@@ -44,7 +44,7 @@ a:link, a:visited{
                 }
 
                 &:hover, &:active{
-                    color: var(--black);
+                    color: var(--sage);
                 }
 
             }

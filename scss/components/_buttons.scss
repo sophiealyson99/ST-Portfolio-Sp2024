@@ -9,18 +9,18 @@ button{
 
 // was .primary-brown-button
 .primary-contact-button{
-    background-color: transparent;
+    background-color: var(--forestGreen);
     border-color: var(--forestGreen);
     padding: 8px 24px;
     font-weight: 700;
     font-size: rem-calc(18);
-    color: var(--forestGreen);
+    color: var(--white);
     border-radius: 23px;
     transition: 0.25s;
     cursor: pointer;
 
     &:hover{
-        background-color: var(--forestGreen);
+        background-color: var(--sage);
         color: var(--white);
     }
 }
