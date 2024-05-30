@@ -562,7 +562,6 @@ header #contact-button-container {
           align-items: center;
   padding-right: 16px;
   padding-top: 30px;
-  padding-bottom: 8px;
 }
 header #main-nav {
   -ms-grid-row: 2;
@@ -584,10 +583,12 @@ header #logo-container {
 }
 @media (min-width: 768px) {
   header #logo-container {
-    display: block;
+    display: -ms-grid;
+    display: grid;
     grid-area: my-logo;
     text-align: center;
-    padding-bottom: 8px;
+    margin: auto;
+    padding-bottom: 72px;
   }
 }
 @media (min-width: 768px) {
@@ -721,6 +722,7 @@ header #logo-container #my-logo {
   #home #quote {
     padding-left: 300px;
     padding-right: 300px;
+    padding-bottom: 100px;
   }
 }
 
@@ -738,7 +740,7 @@ header #logo-container #my-logo {
 }
 @media (min-width: 768px) {
   #about-me-container {
-    padding-top: 280px;
+    padding-top: 180px;
         grid-template-areas: "about-image about-text";
     -ms-grid-columns: 30% auto;
     grid-template-columns: 30% auto;
@@ -778,7 +780,6 @@ header #logo-container #my-logo {
   }
 }
 #about-me-container #about-text {
-  padding: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -806,6 +807,7 @@ header #logo-container #my-logo {
 @media (min-width: 768px) {
   #image-gallery {
     margin-bottom: 44px;
+    padding-bottom: 80px;
   }
 }
 #image-gallery li {
@@ -829,6 +831,9 @@ header #logo-container #my-logo {
   -ms-grid-column: 5;
   grid-area: p3;
   background-image: url("../img/gallery/millie.JPEG");
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-size: cover;
 }
 #image-gallery #p4 {
   -ms-grid-row: 1;
@@ -869,6 +874,7 @@ header #logo-container #my-logo {
 @media (min-width: 768px) {
   #resume-text {
     padding-top: 160px;
+    padding-bottom: 80px;
   }
 }
 
@@ -887,12 +893,14 @@ header #logo-container #my-logo {
 @media (min-width: 768px) {
   #association-top {
     padding-top: 160px;
+    padding-bottom: 80px;
   }
 }
 
 .association-desc {
-  padding-left: 14px;
+  padding-left: 2px;
   padding-right: 120px;
+  text-align: left;
 }
 
 #school-projects {
@@ -911,6 +919,11 @@ header #logo-container #my-logo {
   padding-left: 24px;
   padding-right: 24px;
 }
+@media (min-width: 768px) {
+  #work-projects {
+    padding-bottom: 80px;
+  }
+}
 
 #contact {
   padding-top: 40px;
@@ -925,7 +938,7 @@ header #logo-container #my-logo {
 }
 @media (min-width: 768px) {
   #contact {
-    padding-top: 340px;
+    padding-top: 180px;
   }
 }
 

@@ -11,4 +11,8 @@
 #work-projects{
     padding-left: 24px;
     padding-right: 24px;
+
+    @include md{
+        padding-bottom: 80px;
+    }
 }

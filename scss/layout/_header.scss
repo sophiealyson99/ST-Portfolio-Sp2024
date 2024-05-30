@@ -48,7 +48,7 @@ header{
         align-items: center;
         padding-right: 16px;
         padding-top: 30px;
-        padding-bottom: 8px;
+        // padding-bottom: 8px;
     }
 
     #main-nav{
@@ -69,10 +69,11 @@ header{
         display: none;
 
         @include md{
-            display: block;
+            display: grid;
             grid-area: my-logo;
             text-align: center;
-            padding-bottom: 8px;
+            margin: auto;
+            padding-bottom: 72px;
         }
 
         #my-logo{
