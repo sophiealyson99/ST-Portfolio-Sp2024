@@ -56,6 +56,14 @@ a:link, a:visited{
     }
 }
 
+.hideMainNavAtMobile{
+    display: none;
+
+    @include md{
+        display: block;
+    }
+}
+
 #last-link{
     justify-content: flex-end;
 }

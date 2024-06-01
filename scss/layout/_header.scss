@@ -50,8 +50,9 @@ header{
         right: 0;
         top: 0;
         padding-right: 16px;
-        padding-top: 10px;
-        padding-bottom: 8px;
+        // padding-top: 10px;
+        // padding-bottom: 8px;
+        // margin-bottom: 14px;
     }
 
     #main-nav{
@@ -76,7 +77,8 @@ header{
             grid-area: my-logo;
             text-align: center;
             margin: auto;
-            padding-bottom: 72px;
+            padding-left: 12px;
+            // padding-bottom: 72px;
         }
 
         #my-logo{

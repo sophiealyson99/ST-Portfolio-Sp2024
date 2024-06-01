@@ -1,6 +1,8 @@
-var burgerBtn = document.querySelector(".burger-button");
 
-var mainNavContainer = document.querySelector("#main-nav");
+
+
+var burgerBtn = document.querySelector("#burger-button");
+var mainNav = document.querySelector("#main-nav");
 
 var mainNavVisible = false; 
 
@@ -9,13 +11,13 @@ burgerBtn.addEventListener("click", () =>{
 
     // check to see if we can see the main nav
 
-    if(mainNavVisible === false){
-        mainNavContainer.classList.remove("hideMainNavAtMobile");
+    if(mainNavVisible === false) {
+        mainNav.classList.remove("hideMainNavAtMobile");
         mainNavVisible = true;
     }else{
-        mainNavContainer.classList.add("hideMainNavAtMobile");
+        mainNav.classList.add("hideMainNavAtMobile");
         mainNavVisible = false;
-    }
+    };
 
 });
 

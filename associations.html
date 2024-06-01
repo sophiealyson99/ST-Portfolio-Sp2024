@@ -18,50 +18,55 @@
     <title>Portfolio</title>
 </head>
 
-<header>
-    <div id="logo-container">
-        <div id="my-logo"></div>
-        <a href="index.html"><img src="img/Minimalist Book Library Logo.png" style="height: 200px; width: 200px;" alt="personal logo"></a>
-    </div>
+<body>
+    <header>
+        <div id="logo-container">
+            <div id="my-logo"></div>
+            <a href="index.html"><img src="img/Minimalist Book Library Logo.png" style="height: 200px; width: 200px;" alt="personal logo"></a>
+        </div>
+    
+        <div id="burger-container">
+            <button id="burger-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <nav id="main-nav" class="hideMainNavAtMobile">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li id="last-link"><a href="associations.html">Associations</a></li>
+            </ul>
+          </nav>
+    
+          <div id="contact-button-container">
+            <a href="contact.html"><button class="primary-contact-button">Contact</button></a>
+        </div>
+    
+    </header>
+    
+    <section id="association-top">
+        <h1>Professional Associations</h1>
+        <h2 class="association-name"><a href="https://www.ala.org/">The American Library Association (ALA)</h2></a>
+            <p class="association-desc">The American Library Association (ALA) is the oldest and largest library association in the world.
+                The mission of ALA is “to provide leadership for the development, promotion and improvement of library and information services and the profession of librarianship in order to enhance learning and ensure access to information for all.”
+            </p>
+    
+        <h2 class="association-name"><a href="https://www.palibraries.org/">Pennsylvania Library Association (PaLA)</h2></a>
+            <p class="association-desc">The state's oldest professional library organization serving libraries, library employees, library trustees, and Friends of the Library groups.</p>
+    
+        <h2 class="association-name"><a href="https://palci.org/">Partnership for Academic Library Collaboration and Innovation (PALCI)</h2></a>
+            <p class="association-desc">The PALCI organization was originally founded as the ‘Pennsylvania Academic Library Consortium, Inc.,” and was formed in 1996 as a grassroots federation of 35 academic libraries in the Commonwealth of Pennsylvania.</p>
+    
+        <h2 class="association-name"><a href="https://www.ala.org/pla">Public Library Association (PLA)</h2></a>
+            <p class="association-desc">The Public Library Association (PLA) is the largest association dedicated to supporting the unique and evolving needs of public library professionals. PLA offers continuing education opportunities, unique public library initiatives, and a conference that welcomes public library staff into meaningful partnership.</p>
+            
+    </section>
 
-    <div id="burger-container">
-        <button class="burger-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
+    <script src="js/scripts-dist.js"></script>
+</body>
 
-    <nav id="main-nav" class="hideMainNavAtMobile">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li id="last-link"><a href="associations.html">Associations</a></li>
-        </ul>
-      </nav>
-
-      <div id="contact-button-container">
-        <a href="contact.html"><button class="primary-contact-button">Contact</button></a>
-    </div>
-
-</header>
-
-<section id="association-top">
-    <h1>Professional Associations</h1>
-    <h2 class="association-name"><a href="https://www.ala.org/">The American Library Association (ALA)</h2></a>
-        <p class="association-desc">The American Library Association (ALA) is the oldest and largest library association in the world.
-            The mission of ALA is “to provide leadership for the development, promotion and improvement of library and information services and the profession of librarianship in order to enhance learning and ensure access to information for all.”
-        </p>
-
-    <h2 class="association-name"><a href="https://www.palibraries.org/">Pennsylvania Library Association (PaLA)</h2></a>
-        <p class="association-desc">The state's oldest professional library organization serving libraries, library employees, library trustees, and Friends of the Library groups.</p>
-
-    <h2 class="association-name"><a href="https://palci.org/">Partnership for Academic Library Collaboration and Innovation (PALCI)</h2></a>
-        <p class="association-desc">The PALCI organization was originally founded as the ‘Pennsylvania Academic Library Consortium, Inc.,” and was formed in 1996 as a grassroots federation of 35 academic libraries in the Commonwealth of Pennsylvania.</p>
-
-    <h2 class="association-name"><a href="https://www.ala.org/pla">Public Library Association (PLA)</h2></a>
-        <p class="association-desc">The Public Library Association (PLA) is the largest association dedicated to supporting the unique and evolving needs of public library professionals. PLA offers continuing education opportunities, unique public library initiatives, and a conference that welcomes public library staff into meaningful partnership.</p>
-        
-</section>
 
 <footer class="footer-container">
     <div id="valid-icons">

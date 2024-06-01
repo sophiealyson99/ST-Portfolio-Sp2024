@@ -21,12 +21,13 @@
     form{
         display: grid;
         gap: 16px;
-        // grid-template-rows: 90px 90px 200px 500px;
+        grid-template-rows: 90px 90px 200px auto;
         // grid-template-areas: 
         // "contact-name"
         // "contact-email"
         // "contact-message"
         // "send-button";
+
 
         @include md{
             // padding: 0 10vw;
@@ -111,6 +112,7 @@
         }
     }
 }
+
 
 #social-media{
     display: table;

@@ -17,3 +17,10 @@ input[type=password],
 textarea {
     -webkit-appearance: none;
 }
+
+
+@media(min-width: 576px){
+    #form{
+      max-width: 540px;
+    }
+  }

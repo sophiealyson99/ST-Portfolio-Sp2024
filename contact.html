@@ -18,54 +18,60 @@
     <title>Portfolio</title>
 </head>
 
-<header>
-    <div id="logo-container">
-        <div id="my-logo"></div>
-        <a href="index.html"><img src="img/Minimalist Book Library Logo.png" style="height: 200px; width: 200px;" alt="personal logo"></a>
-    </div>
-
-    <div id="burger-container">
-        <button class="burger-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-
-    <nav id="main-nav" class="hideMainNavAtMobile">
+<body>
+    <header>
+        <div id="logo-container">
+            <div id="my-logo"></div>
+            <a href="index.html"><img src="img/Minimalist Book Library Logo.png" style="height: 200px; width: 200px;" alt="personal logo"></a>
+        </div>
+    
+        <div id="burger-container">
+            <button id="burger-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <nav id="main-nav" class="hideMainNavAtMobile">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li id="last-link"><a href="associations.html">Associations</a></li>
+            </ul>
+          </nav>
+    
+          <div id="contact-button-container">
+            <a href="contact.html"><button class="primary-contact-button">Contact</button></a>
+        </div>
+    
+    </header>
+    
+    <section id="contact">
+        <h1>Contact</h1>
+        <form id="contact-form" action="#">
+            <input id="contact-name" type="text" placeholder="Name">
+            <input id="contact-email" type="email" placeholder="Email">
+            <textarea id="contact-message" placeholder="Message"></textarea>
+            <a href="mailto: sophiealyson99@gmail.com"><button id="send-button">Send</button></a>
+        </form>
+    </section>
+    
+    <!-- <section id="social-media">
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li id="last-link"><a href="associations.html">Associations</a></li>
+            <li><a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
+    
+            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+    
+            <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
         </ul>
-      </nav>
+    </section> -->
 
-      <div id="contact-button-container">
-        <a href="contact.html"><button class="primary-contact-button">Contact</button></a>
-    </div>
+    <script src="js/scripts-dist.js"></script> 
+</body>
 
-</header>
 
-<section id="contact">
-    <h1>Contact</h1>
-    <form id="contact-form" action="#">
-        <input id="contact-name" type="text" placeholder="Name">
-        <input id="contact-email" type="email" placeholder="Email">
-        <textarea id="contact-message" placeholder="Message"></textarea>
-        <a href="mailto: sophiealyson99@gmail.com"><button id="send-button">Send</button></a>
-    </form>
-</section>
-
-<!-- <section id="social-media">
-    <ul>
-        <li><a href="https://twitter.com/home?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
-
-        <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-
-        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-
-        <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
-</section> -->
 
 <footer class="footer-container">
     <div id="valid-icons">

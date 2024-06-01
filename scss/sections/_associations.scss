@@ -14,6 +14,10 @@
 
 .association-desc{
     padding-left: 2px;
-    padding-right: 120px;
+    padding-right: 2px;
     text-align: left;
+
+    @include md{
+        padding-right: 120px;
+    }
 }
