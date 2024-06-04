@@ -605,6 +605,7 @@ header #logo-container {
     text-align: center;
     margin: auto;
     padding-left: 12px;
+    padding-bottom: 72px;
   }
 }
 @media (min-width: 768px) {
@@ -910,7 +911,7 @@ header #logo-container #my-logo {
 }
 @media (min-width: 768px) {
   #association-top {
-    padding-top: 160px;
+    padding-top: 220px;
     padding-bottom: 80px;
   }
 }
@@ -934,7 +935,7 @@ header #logo-container #my-logo {
 }
 @media (min-width: 768px) {
   #school-projects {
-    padding-top: 160px;
+    padding-top: 220px;
   }
 }
 
@@ -966,14 +967,16 @@ header #logo-container #my-logo {
 }
 
 #contact-form {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  gap: 24px;
-  padding: 12px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: var(--forestGreen);
+  padding: 32px 16px;
 }
 #contact-form form {
   display: -ms-grid;
@@ -984,6 +987,7 @@ header #logo-container #my-logo {
 }
 @media (min-width: 768px) {
   #contact-form form {
+    padding: 0 10vw;
     -ms-grid-columns: 50% auto;
     grid-template-columns: 50% auto;
     -ms-grid-rows: 8vh 16vh auto;
@@ -1040,19 +1044,10 @@ header #logo-container #my-logo {
 #contact-form form div ::ms-input-placeholder {
   color: var(--forestGreen);
 }
-#contact-form form #contact-name {
-  width: 100%;
-  grid-area: contact-name;
-}
 @media (min-width: 768px) {
   #contact-form form #contact-name {
     grid-area: contact-name;
   }
-}
-#contact-form form #contact-email {
-  border: none;
-  width: 100%;
-  grid-area: contact-email;
 }
 @media (min-width: 768px) {
   #contact-form form #contact-email {
@@ -1060,12 +1055,9 @@ header #logo-container #my-logo {
   }
 }
 #contact-form form #contact-message {
-  border: none;
-  width: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  grid-area: contact-message;
 }
 @media (min-width: 768px) {
   #contact-form form #contact-message {
@@ -1080,10 +1072,6 @@ header #logo-container #my-logo {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: transparent;
-  border: none;
-  border-radius: 6px;
-  font-size: 0.25rem;
-  grid-area: send-button;
 }
 @media (min-width: 768px) {
   #contact-form form #send-button {
@@ -1095,22 +1083,9 @@ header #logo-container #my-logo {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  #contact-form form #contact-name {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
   #contact-form form #contact-email {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-  }
-  #contact-form form #contact-email {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  #contact-form form #contact-message {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
   }
   #contact-form form #contact-message {
     -ms-grid-row: 2;
@@ -1121,12 +1096,4 @@ header #logo-container #my-logo {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
   }
-  #contact-form form #send-button {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-  }
-}
-
-#social-media {
-  display: table;
 }

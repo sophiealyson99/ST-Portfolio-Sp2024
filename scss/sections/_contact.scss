@@ -12,25 +12,20 @@
 }
 
 #contact-form{
-    display: inline-flex;
-    // background-color: var(--forestGreen);
-    gap: 24px;
-    padding: 12px 16px;
+    display: flex;
     justify-content: center;
+    align-content: center;
+    background-color: var(--forestGreen);
+    padding: 32px 16px;
+    // justify-content: space-evenly;
 
     form{
         display: grid;
         gap: 16px;
         grid-template-rows: 90px 90px 200px auto;
-        // grid-template-areas: 
-        // "contact-name"
-        // "contact-email"
-        // "contact-message"
-        // "send-button";
-
 
         @include md{
-            // padding: 0 10vw;
+            padding: 0 10vw;
             grid-template-columns: 50% auto;
             grid-template-rows: 8vh 16vh auto;
             grid-template-areas: 
@@ -72,27 +67,27 @@
         }
 
         #contact-name{
-            width: 100%;
-            grid-area: contact-name;
+            // width: 100%;
+            // grid-area: contact-name;
             @include md{
                 grid-area: contact-name;
             }
         }
 
         #contact-email{
-            border: none;
-            width: 100%;
-            grid-area: contact-email;
+            // border: none;
+            // width: 100%;
+            // grid-area: contact-email;
             @include md{
                 grid-area: contact-email;
             }
         }
 
         #contact-message{
-            border: none;
-            width: 100%;
+            // border: none;
+            // width: 100%;
             align-items: flex-start;
-            grid-area: contact-message;
+            // grid-area: contact-message;
             @include md{
                 grid-area: contact-message;
             }
@@ -102,18 +97,14 @@
             align-items: flex-start;
             justify-content: flex-end;
             background-color: transparent;
-            border: none;
-            border-radius: 6px;
-            font-size: rem-calc(4);
-            grid-area: send-button;
+            // border: none;
+            // border-radius: 6px;
+            // font-size: rem-calc(4);
+            // grid-area: send-button;
             @include md{
                 grid-area: send-button;
             }
-        }
     }
 }
-
-
-#social-media{
-    display: table;
 }
+
