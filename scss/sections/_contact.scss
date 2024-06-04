@@ -12,17 +12,15 @@
 }
 
 #contact-form{
-    display: flex;
     justify-content: center;
     align-content: center;
+    text-align: center;
     background-color: var(--forestGreen);
     padding: 32px 16px;
-    // justify-content: space-evenly;
-
     form{
         display: grid;
         gap: 16px;
-        grid-template-rows: 90px 90px 200px auto;
+        grid-template-rows: 90px 90px 200px 90px;
 
         @include md{
             padding: 0 10vw;
@@ -67,27 +65,27 @@
         }
 
         #contact-name{
-            // width: 100%;
-            // grid-area: contact-name;
+            width: 100%;
+            grid-area: contact-name;
             @include md{
                 grid-area: contact-name;
             }
         }
 
         #contact-email{
-            // border: none;
-            // width: 100%;
-            // grid-area: contact-email;
+            border: none;
+            width: 100%;
+            grid-area: contact-email;
             @include md{
                 grid-area: contact-email;
             }
         }
 
         #contact-message{
-            // border: none;
-            // width: 100%;
+            border: none;
+            width: 100%;
             align-items: flex-start;
-            // grid-area: contact-message;
+            grid-area: contact-message;
             @include md{
                 grid-area: contact-message;
             }
@@ -108,3 +106,15 @@
 }
 }
 
+#contact-form{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    form {
+        width: 50%;
+    }
+    @include md{
+        display: flex;
+    }
+}
