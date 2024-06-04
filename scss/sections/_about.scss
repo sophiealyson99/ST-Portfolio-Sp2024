@@ -1,4 +1,8 @@
-
+#logo-container{
+    @include md{
+        padding-bottom: 68px;
+}
+}
 
 #about-me-container{
     padding: 24px 16px;

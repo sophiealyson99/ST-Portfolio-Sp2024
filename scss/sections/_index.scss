@@ -1,20 +1,9 @@
-// #home{
-//     padding: 50px 100px 10px;
-//     align-items: center;
-//     padding-top: 40px;
-//     padding-left: 240px;
-//     padding-right: 240px;
-//     @include md{
-//         padding-top: 260px;
-//     }
-
-//     #quote{
-//         padding-left: 240px;
-//     }
-// }
 
 #logo-container{
     height: 14vh;
+    @include md{
+        padding-bottom: 72px;
+}
 }
 
 
@@ -29,7 +18,7 @@
         color: var(--forestGreen);
         margin: 34px;
         @include md{
-            padding-left: 300px;
+            padding-left: 200px;
             padding-right: 300px;
             padding-bottom: 100px;
         }
