@@ -983,7 +983,7 @@ header #logo-container #my-logo {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  background-color: var(--forestGreen);
+  gap: 8px;
   padding: 32px 16px;
 }
 #contact-form form {
@@ -1048,9 +1048,6 @@ header #logo-container #my-logo {
 #contact-form form div ::placeholder {
   color: var(--forestGreen);
   opacity: 1;
-}
-#contact-form form div ::ms-input-placeholder {
-  color: var(--forestGreen);
 }
 #contact-form form #contact-name {
   width: 100%;
@@ -1146,5 +1143,6 @@ header #logo-container #my-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 120px;
   }
 }
