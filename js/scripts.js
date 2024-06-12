@@ -21,9 +21,11 @@ burgerBtn.addEventListener("click", () =>{
 
 });
 
-<script>
+{/* <script>
     document.getElementById('contact-button').onclick = function() {
         window.location.href = 'contact.html';
     };
-</script>
+</script> */}
+
+
 
