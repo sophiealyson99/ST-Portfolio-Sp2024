@@ -11,9 +11,9 @@
     text-align: center;
     display: grid;
     padding: 22px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-template-areas: 
-    "valid-icons footer-cci footer-sitemap";
+    "valid-icons footer-cci footer-sitemap copyright";
 
     justify-content: space-around;
 
@@ -48,6 +48,13 @@
     #footer-sitemap{
         grid-area: footer-sitemap;
         grid-column-start: 3;
+        padding-top: 16px;
+    }
+
+    #copyright{
+        grid-area: copyright;
+        grid-column-start: 4;
+        // padding-top: 16px;
     }
 }
 

@@ -20,38 +20,38 @@
 
 
 <body>
-  <header>
-    <div id="logo-container">
-        <div id="my-logo"></div>
-        <a href="index.html"><img src="img/Minimalist-Book-Library-Logo.png" style="height: 200px; width: 200px;" alt="personal logo"></a>
-    </div>
+    <header>
+        <div id="logo-container">
+            <div id="my-logo"></div>
+            <a href="index.html"><img src="img/Minimalist-Book-Library-Logo.png" style="height: 200px; width: 200px;" alt="personal logo"></a>
+        </div>
+    
+        <div id="burger-container">
+            <button id="burger-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    
+        <nav id="main-nav" class="hideMainNavAtMobile">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li id="last-link"><a href="associations.html">Associations</a></li>
+            </ul>
+          </nav>
 
-    <div id="burger-container">
-        <button id="burger-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
+        <div id="contact-button-container">
+            <button id="primary-contact-button">Contact</button>
+        </div>
 
-    <nav id="main-nav" class="hideMainNavAtMobile">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li id="last-link"><a href="associations.html">Associations</a></li>
-        </ul>
-      </nav>
-
-    <div id="contact-button-container">
-        <button class="primary-contact-button">Contact</button>
-    </div>
-
-    <script>
-        document.getElementById('contact-button').onclick = function() {
-            window.location.href = 'contact.html';
-        };
-    </script>
-
-</header>
+        <script>
+            document.getElementById('primary-contact-button').onclick = function() {
+                window.location.href = 'contact.html';
+            };
+        </script>
+    
+    </header>
   
     <section id="about-me-container">
       <div id="about-image"></div>
@@ -98,8 +98,15 @@
       <a href="https://drexel.edu/cci/">CCI, Drexel University</a>
     </div>
 
+
     <div id="footer-sitemap">
         <button id="sitemap-btn" class="primary-sitemap-button">Site Map</button>
+    </div>
+
+    <div id="copyright">
+        <p>
+            Sophie Tessier  <i class="fa-solid fa-copyright"></i>
+        </p>
     </div>
 
     <script>
