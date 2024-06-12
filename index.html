@@ -40,10 +40,16 @@
                 <li id="last-link"><a href="associations.html">Associations</a></li>
             </ul>
           </nav>
-    
-          <div id="contact-button-container">
-            <a href="contact.html"><button class="primary-contact-button">Contact</button></a>
+
+        <div id="contact-button-container">
+            <button class="primary-contact-button">Contact</button>
         </div>
+
+        <script>
+            document.getElementById('contact-button').onclick = function() {
+                window.location.href = 'contact.html';
+            };
+        </script>
     
     </header>
 
