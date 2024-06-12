@@ -679,6 +679,7 @@ header #logo-container #my-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 16px;
   -ms-grid-column: 2;
       grid-column-start: 2;
 }
