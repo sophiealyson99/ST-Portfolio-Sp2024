@@ -8,10 +8,15 @@
     }
 }
 
-#resume-item{
-    cursor: pointer;
+// #resume-item{
+//     cursor: pointer;
 
-    &:hover{
-        color: var(--sage);
-    }
+//     &:hover{
+//         color: var(--sage);
+//     }
+// }
+
+#resume-button{
+    font-size: 4vh;
+    border-radius: 8px;
 }

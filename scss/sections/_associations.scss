@@ -9,7 +9,10 @@
 }
 
 .association-name{
-
+    &:hover{
+        // background-color: var(--forestGreen);
+        color: var(--forestGreen);
+    }
 }
 
 .association-desc{
@@ -19,5 +22,12 @@
 
     @include md{
         padding-right: 120px;
+    }
+}
+
+h2{
+    &:hover{
+        // background-color: var(--forestGreen);
+        color: var(--forestGreen);
     }
 }

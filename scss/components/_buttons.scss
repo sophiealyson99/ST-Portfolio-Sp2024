@@ -61,3 +61,18 @@ button{
         color: var(--white);
     }
 }
+
+#resume-button{
+    border: 2px solid black;
+    transition: 0.25s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--forestGreen);
+        color: var(--cream);
+    }
+
+    @include md{
+        margin-top: 20px;
+    }
+}

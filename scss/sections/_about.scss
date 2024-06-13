@@ -114,8 +114,7 @@
     #p3{
         grid-area: p3;
         background-image: url("../img/gallery/millie.JPEG");
-        object-fit: contain;
-        background-size: cover;
+        background-position: top;
     }
 
     #p4{
@@ -131,6 +130,7 @@
     #p6{
         grid-area: p6;
         background-image: url("../img/gallery/sake.jpg"); 
+        background-position: auto;
     }
 
     #p7{

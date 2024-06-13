@@ -14,7 +14,7 @@ header{
     // left: 0;
     // right: 0;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--cream);
     margin: auto;
 
 
@@ -85,6 +85,7 @@ header{
             height: 4vh;
             position: absolute;
             text-align: center;
+            outline-color: var(--forestGreen);
         }
     }
 }
