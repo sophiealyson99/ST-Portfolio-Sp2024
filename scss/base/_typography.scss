@@ -3,33 +3,24 @@
 ============= */
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Libre Baskerville", serif;
 }
 
-// font-family: "Comfortaa", sans-serif;
-// font-family: "Open Sans", sans-serif;
-
-// Comfortaa 
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 700
-// .comfortaa-<uniquifier> {
-
-//     font-optical-sizing: auto;
-//     font-weight: <weight>;
-//     font-style: normal;
-//   }
-
-
-//   Open Sans 
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
-// .open-sans-<uniquifier> {
-
-//     font-optical-sizing: auto;
-//     font-weight: <weight>;
-//     font-style: normal;
-//     font-variation-settings:
-//       "wdth" 100;
-//   }
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  

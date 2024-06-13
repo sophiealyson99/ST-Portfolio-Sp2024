@@ -63,11 +63,14 @@ button{
 }
 
 #resume-button{
-    border: 2px solid black;
+    background-color: var(--cream);
+    color: var(--forestGreen);
+    border: 1px solid var(--forestGreen);
     transition: 0.25s;
     cursor: pointer;
 
     &:hover{
+        transition: 0.25s;
         background-color: var(--forestGreen);
         color: var(--cream);
     }
@@ -76,3 +79,17 @@ button{
         margin-top: 20px;
     }
 }
+
+#650-button{
+    border: 10px solid var(--forestGreen);
+    transition: 0.25s;
+    cursor: pointer;
+
+    &:hover{
+        transition: 0.25s;
+        background-color: var(--forestGreen);
+        color: var(--cream);
+    }
+
+}
+

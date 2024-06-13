@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 
     <!-- Google Font  -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/cee62e1f21.js" crossorigin="anonymous"></script>
@@ -52,8 +56,8 @@
     
     </header>
     
-    <section>
         <div id="school-projects">
+
             <h1>School Projects</h1>
     
         <h3>INFO 590-900, Foundations of Data and Information</h3>
@@ -63,13 +67,24 @@
             <p>This introductory course provides an overview of basic phases of design processes for students in information disciplines. Design thinking is a way of engaging with the world that emphasizes creativity and constructive change; students will learn about techniques for several key design practices: empathizing with others, framing a problem, ideation, experimentation, and storytelling. By applying these techniques in a variety of contexts related to information, students will practice innovation in the information professions with an emphasis on understanding the social implications of potential innovations.</p>
        
         <h3>INFO 650-900, Public Library Service</h3>
-            <p>Surveys information services provided through public libraries, with attention to governmental and funding issues, determinants of use, extending services to non-users, and cooperation among libraries.</p>
+            <p>Surveys information services provided through public libraries, with attention to governmental and funding issues, determinants of use, extending services to non-users, and cooperation among libraries.
+            </p>
+
+            <div id="650-item">
+                <button id="650-button">Public Library PR Project</button>
+            </div>
     
+            <script>
+                document.getElementById('650-button').onclick = function() {
+                    window.location.href = "INFO 650 Public Library PR Project.pdf";
+                };
+            </script>
+
+
         <h3>INFO 552-900, Intro to Web Design</h3>
             <p>Introduction to creating websites that incorporate interactive web services to support users in information organizations. Students learn to establish websites that meet usability, accessibility and intellectual property standards, via composition of text and graphic files, and use of scripts for interactive application to support community information resource needs.</p>
         </div>
-    
-    </section>
+
     
     <section id="work-projects">
         <h1>Work Projects</h1>
@@ -84,6 +99,8 @@
             <p>Performed user testing on new online catalog search. Process interlibrary loan requests and design monthly book displays.</p>
     </section>
 
+
+   
     <footer class="footer-container">
         <div id="valid-icons">
             <!-- html validation

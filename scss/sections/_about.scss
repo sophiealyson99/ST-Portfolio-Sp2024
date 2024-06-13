@@ -5,7 +5,9 @@
 }
 
 #about-me-container{
-    padding: 24px 16px;
+    // padding: 24px 16px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     padding-top: 62px;
     display: grid;
     gap: 16px;
@@ -62,6 +64,8 @@
 
 #image-gallery{
     padding: 14px 16px;
+    padding-left: 6vw;
+    padding-right: 6vw;
     display: grid;
     gap: 16px;
     padding-bottom: 80px;
