@@ -1,11 +1,11 @@
 #logo-container{
     @include md{
-        // padding-bottom: 68px;
+        padding-bottom: 68px;
 }
 }
 
 #about-me-container{
-    // padding: 24px 16px;
+    padding: 24px 16px;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 62px;
@@ -148,17 +148,3 @@
         background-image: url("../img/IMG_2283.jpg"); 
     }
 }
-
-
-// #playlist{
-//     display: grid;
-//     grid-template-columns: auto 40% auto;
-//     align-items: center;
-// }
-
-
-// #goodreads{
-//     display: flex;
-//     padding-left: 24px;
-//     padding-right: 24px;
-// }

@@ -22,7 +22,6 @@ header{
         grid-template-columns: 40% 20% 40%;
         grid-template-areas: 
         "main-nav my-logo contact-button-container"
-        // justify-content: space-evenly;
     }
 
     #burger-container{
@@ -79,6 +78,7 @@ header{
             margin: auto;
             padding-left: 12px;
             // padding-bottom: 68px;
+            padding-bottom: 0;
         }
 
         #my-logo{
